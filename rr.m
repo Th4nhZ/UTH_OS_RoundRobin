@@ -23,7 +23,7 @@ rtime = btime;        %intially remaining time = burst time
 b = 0;
 t = 0;
 flag = 1;             %this is set if process has burst time left after quantum time is completed
-while(flag==1)        %loop until flag = 0
+while(flag==1)        %loop until flag is set to 0
     flag = 0;
     for i=1:1:n
         if(rtime(i) >= q)
